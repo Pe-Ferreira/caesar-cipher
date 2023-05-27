@@ -24,10 +24,8 @@ public class CrypticController extends HttpServlet {
         PrintWriter responseWriter = response.getWriter();
         response.setContentType("text/html");
 
-        responseWriter.println("<html>" +
-                                    "<body>");
-        responseWriter.println(     "<h1>" + encryptedMessage + "</h1>");
-        responseWriter.println("</body></html>");
+        responseWriter.println(HTMLInjector.START_HTML_BOILERPLATE);
+        responseWriter.println(HTMLInjector.END_HTML_BOILERPLATE);
     }
 
     public void destroy() {
