@@ -8,26 +8,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-<body>
-    <h1><%= "Encrypt texts using the Caesar Cipher." %></h1>
-    <br/>
-    <form action="encrypt">
-        <textarea id="message" name="message" rows="5" cols="50"></textarea>
-        <br/>
-        <input id="key" name="key" type="text" placeholder="Enter key"/>
-        <br/>
-        <button type="submit" class="btn btn-primary">Encrypt</button>
-<%--        <a href="hello-servlet" class="button">Encrypt</a>--%>
-    </form>
+<body class="bg-dark">
+<%--    <h1><%= "Encrypt texts using the Caesar Cipher." %></h1>--%>
+<%--    <br/>--%>
+<%--    <form action="encrypt">--%>
+<%--        <textarea id="message" name="message" rows="5" cols="50"></textarea>--%>
+<%--        <br/>--%>
+<%--        <input id="key" name="key" type="text" placeholder="Enter key"/>--%>
+<%--        <br/>--%>
+<%--        <button type="submit" class="btn btn-primary">Encrypt</button>--%>
+<%--&lt;%&ndash;        <a href="hello-servlet" class="button">Encrypt</a>&ndash;%&gt;--%>
+<%--    </form>--%>
 
-    <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="text-secondary px-4 py-5 text-center">
         <div class="py-5">
-            <h1 class="display-5 fw-bold text-white">Dark color hero</h1>
+            <h1 class="display-5 fw-bold text-white">Encrypt messages using the Caesar Cipher.</h1>
             <div class="col-lg-6 mx-auto">
-                <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <p class="fs-5 mb-4">Also known as the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. The method is named after Julius Caesar, who used it in his private correspondence.</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-                    <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+                    <form action="encrypt">
+                        <textarea id="message" name="message" rows="5" cols="50" placeholder="Enter message"></textarea>
+                        <br/>
+                        <br/>
+                        <input id="key" name="key" type="text" placeholder="Enter encryption key"/>
+                        <br/>
+                        <br/>
+                        <button type="submit" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Encrypt</button>
+                        <%--        <a href="hello-servlet" class="button">Encrypt</a>--%>
+                    </form>
+<%--                    <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>--%>
                 </div>
             </div>
         </div>

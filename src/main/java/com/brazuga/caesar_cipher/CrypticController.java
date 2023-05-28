@@ -25,6 +25,7 @@ public class CrypticController extends HttpServlet {
         response.setContentType("text/html");
 
         responseWriter.println(HTMLInjector.START_HTML_BOILERPLATE);
+        responseWriter.println(encryptedMessage);
         responseWriter.println(HTMLInjector.END_HTML_BOILERPLATE);
     }
 
