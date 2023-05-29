@@ -9,17 +9,6 @@
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body class="bg-dark">
-<%--    <h1><%= "Encrypt texts using the Caesar Cipher." %></h1>--%>
-<%--    <br/>--%>
-<%--    <form action="encrypt">--%>
-<%--        <textarea id="message" name="message" rows="5" cols="50"></textarea>--%>
-<%--        <br/>--%>
-<%--        <input id="key" name="key" type="text" placeholder="Enter key"/>--%>
-<%--        <br/>--%>
-<%--        <button type="submit" class="btn btn-primary">Encrypt</button>--%>
-<%--&lt;%&ndash;        <a href="hello-servlet" class="button">Encrypt</a>&ndash;%&gt;--%>
-<%--    </form>--%>
-
     <div class="text-secondary px-4 py-5 text-center">
         <div class="py-5">
             <h1 class="display-5 fw-bold text-white">Encrypt messages using the Caesar Cipher.</h1>
@@ -34,14 +23,12 @@
                         <br/>
                         <br/>
                         <button type="submit" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Encrypt</button>
-                        <%--        <a href="hello-servlet" class="button">Encrypt</a>--%>
                     </form>
-<%--                    <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>--%>
                 </div>
             </div>
         </div>
     </div>
-
+    <p class="text-secondary">You can also <a href="decrypt.jsp">decrypt a message</a>.</p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
