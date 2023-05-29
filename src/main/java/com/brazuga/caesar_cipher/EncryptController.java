@@ -6,12 +6,12 @@ import com.brazuga.caesar_cipher.service.EncryptService;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "crypticController", value = "/encrypt")
-public class CrypticController extends HttpServlet {
+@WebServlet(name = "encryptController", value = "/encrypt")
+public class EncryptController extends HttpServlet {
 
     private EncryptService encryptService;
 
-    public CrypticController() {
+    public EncryptController() {
         this.encryptService = new EncryptService();
     }
 
