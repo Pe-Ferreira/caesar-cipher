@@ -1,5 +1,6 @@
 package com.brazuga.caesar_cipher;
 
+import com.brazuga.caesar_cipher.service.DecryptService;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
